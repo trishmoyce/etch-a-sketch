@@ -1,0 +1,20 @@
+body {
+    background: white
+}
+
+.container {
+    align-items: space-evenly;
+    background: white;
+    display: grid;
+    gap: 3px 3px;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 402px;
+}
+
+.box {
+    background-color: lavender;
+    height: 120px;
+    width: 120px;
+}
