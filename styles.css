@@ -2,6 +2,27 @@ body {
     background: white
 }
 
+.buttoncont {
+    display: flex;
+    justify-content: center;
+}
+
+.clearbutton {
+    background-color: lavender;
+    border: none;
+    color: white;
+    font-family: 'Courier New', monospace;
+    font-size: 20px;
+    padding: 3px 6px;
+    text-align: center;
+    transition-duration: 0.6s;
+}
+
+.clearbutton:hover{
+    background-color: pink;
+    color: white;
+}
+
 .container {
     align-items: space-evenly;
     background: white;

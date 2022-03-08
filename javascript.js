@@ -1,7 +1,13 @@
+// div container for all boxes
+
 const container = document.querySelector('.container');
+
+// creates class for all boxes so they can be formatted in CSS
 
 const box = document.createElement('box');
 box.classList.add('box');
+
+// creates all new boxes
 
 grid01 = document.createElement('div');
 grid01.classList.add('box');
@@ -67,15 +73,21 @@ grid16 = document.createElement('div');
 grid16.classList.add('box');
 container.appendChild(grid16);
 
-//grid16.addEventListener('mouseover', mouseOver);
-
-//function mouseOver() {
-//    grid16.style.backgroundColor = "pink";
-//}
+// hovering causes boxes to turn pink
 
 const hover = document.querySelectorAll('.box');
 for (let i = 0; i < hover.length; i++) {
     hover[i].addEventListener('mouseover', function() {
         hover[i].style.backgroundColor = "pink";
+});
+}
+
+// clicking the button reverts all boxes back to lavender
+
+const clearButton = document.querySelector('.clearbutton');
+const clear = document.querySelectorAll('.box');
+for (let i = 0; i < clear.length; i++) {
+    clearButton.addEventListener('click', function() {
+        clear[i].style.backgroundColor = "lavender";
 });
 }
