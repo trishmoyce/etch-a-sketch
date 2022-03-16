@@ -7,7 +7,7 @@ body {
     justify-content: center;
 }
 
-.clearbutton {
+.newbutton {
     background-color: lavender;
     border: none;
     color: white;
@@ -18,24 +18,31 @@ body {
     transition-duration: 0.6s;
 }
 
-.clearbutton:hover{
+.newbutton:hover{
     background-color: pink;
     color: white;
 }
 
 .container {
-    align-items: space-evenly;
-    background: white;
-    display: grid;
-    gap: 3px 3px;
-    grid-template-columns: auto auto auto auto;
-    justify-content: space-evenly;
     margin: auto;
-    width: 402px;
+    height: 960px;
+    width: 960px;
+}
+
+.row {
+    display: flex;
+    gap: 2px;
+    padding: 1px;
 }
 
 .box {
     background-color: lavender;
-    height: 120px;
-    width: 120px;
+    box-sizing: border-box;
+    flex: 1 1 auto;
+}
+
+.box::before {
+    content: '';
+    display: block;
+    padding-top: 100%;
 }
